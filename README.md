@@ -1,4 +1,4 @@
-# vue2-select-tree
+# el-select-tree
 
 #### 介绍
 
