@@ -18,4 +18,5 @@
 3. `import Vue2SelectTreeSample from '你的文件目录/el-tree-select/index'`引入组件使用,需求不一致的话可以对组件进行一些修改
 
 #### 截图
-![image](https://user-images.githubusercontent.com/28948108/232950865-db81d1bf-d6fc-4340-9ad7-26dd154edaa7.png)
+
+<img src="https://user-images.githubusercontent.com/28948108/232951779-9c65c89e-ce35-46e7-8a17-922ddb1ca9b4.png" width="400"/>
