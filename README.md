@@ -10,7 +10,7 @@
 
 1. 首先你本地项目中需要安装了vue 2.x、element-ui 2.1x、vue-virtual-scroll-list 
 2. 把src/lib-components中的el-tree-select组件复制到你的项目目录
-3. `import Vue2SelectTreeSample from '你的文件目录/el-tree-select/index'`引入组件使用,需求不一致的话可以对组件进行一些修改
+3. `import Vue2SelectTreeSample from 'xxx'`引入组件使用,需求不一致的话可以对组件进行一些修改
 
 #### 本地预览
 
