@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <title>demo</title>
+</head>
+<body>
+  <div id="app">
+    <vue2-select-tree-sample
+      :value.sync="select"
+      :data="data"
+    />
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script src="./vue2-select-tree.min.js"></script>
+<script>
+
+  function getData() {
+    let data = [];
+    for(let i = 0; i < 10000; i = i + 7) {
+      data.push({
+        id: i,
+        label: '火锅' + i,
+        value: i,
+        level: 1,
+        children: [
+          {
+            id: i + 1,
+            label: '三鲜火锅' + i,
+            value: 100001,
+            level: 10002
+          },
+          {
+            id: i + 2,
+            label: '鸳鸯锅' + i,
+            value: 2,
+            level: 2
+          },
+          {
+            id: i + 3,
+            label: '麻辣锅' + i,
+            value: 3,
+            level: 2
+          },
+          {
+            id: i + 4,
+            label: '魔鬼辣锅' + i,
+            value: 4,
+            level: 2
+          },
+          {
+            id: i + 5,
+            label: '菌菇锅' + i,
+            value: 5,
+            level: 2
+          }
+        ]
+      })
+    }
+    return data;
+  }
+
+  const app = new Vue({
+    el: '#app',
+    components: {
+      vue2SelectTreeSample: Vue2SelectTree
+    },
+    data: function() {
+      return {
+        select: [],
+        data: getData()
+      }
+    },
+    methods:{
+      //在这里写方法
+    }
+  })
+</script>
+</html>
